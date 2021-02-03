@@ -1,0 +1,94 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-size: 100%;
+  font-family: "Montserrat", sans-serif;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  perspective: 300px;
+}
+div.container {
+  width: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+div.card {
+  min-height: 80vh;
+  width: 25rem;
+  border-radius: 30px;
+  padding: 0rem 3rem;
+  box-shadow: 0 20px 20px rgba(0, 0, 0, 0.2), 0px 0px 50px rgba(0, 0, 0, 0.2);
+  transform-style: preserve-3d;
+}
+div.sneaker {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+div.sneaker img {
+  width: 15rem;
+  z-index: 2;
+  margin: 2rem 0rem;
+  transition: all 0.75s ease-out;
+}
+div.circle {
+  width: 10rem;
+  height: 10rem;
+  border-radius: 50%;
+  background: linear-gradient(to right, rgb(209, 8, 8), rgb(124, 124, 124));
+  position: absolute;
+  z-index: 1;
+}
+div.info h1 {
+  font-size: 2.5rem;
+  transition: all 0.75s ease-out;
+}
+div.info h3 {
+  font-size: 1.2rem;
+  padding: 1.5rem 0rem;
+  font-family: "Montserrat Alternates";
+  color: grey;
+  font-weight: normal;
+  transition: all 0.75s ease-out;
+}
+div.sizes {
+  display: flex;
+  justify-content: space-between;
+}
+div.sizes button {
+  padding: 0.5rem 1.5rem;
+  color: grey;
+  border: none;
+  background-color: white;
+  box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.2);
+  border-radius: 30px;
+  cursor: pointer;
+  font-weight: bold;
+  transition: all 0.75s ease-out;
+  outline: none;
+}
+div.sizes button.active {
+  color: white;
+  background-color: grey;
+}
+div.purchase {
+  margin-top: 4rem;
+  transition: all 0.75s ease-out;
+}
+div.purchase button {
+  width: 100%;
+  padding: 1rem 0rem;
+  border: none;
+  background-color: red;
+  color: white;
+  cursor: pointer;
+  border-radius: 30px;
+  font-weight: bold;
+  outline: none;
+}
